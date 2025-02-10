@@ -7,11 +7,10 @@ module.exports = defineConfig({
       require('cypress-mochawesome-reporter/plugin')(on);
     }
   },
-  reporter: 'mochawesome',
+  reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     reportDir: 'cypress/results',
     overwrite: false,
-    html: true,
-    json: true
+    html: true
   }
 });

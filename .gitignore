@@ -1,0 +1,38 @@
+# Cypress-related files
+node_modules/
+cypress/videos/
+cypress/screenshots/
+cypress/results/
+
+# Cypress environment files
+cypress.env.json
+.env
+
+# Output and log files
+*.log
+*.tsbuildinfo
+*.tmp
+
+# Test reports
+mochawesome-report/
+cypress/reports/
+junit-report.xml
+
+# GitHub Actions artifacts and caches
+.github/workflows/node_modules/
+.github/workflows/cypress/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Dependency lock files (optional, if managed externally)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml

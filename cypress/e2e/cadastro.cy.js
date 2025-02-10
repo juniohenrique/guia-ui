@@ -37,14 +37,14 @@ describe('Teste de Cadastro de Usuário', () => {
         cy.get('[data-qa="months"').should('be.visible').select('1')
         cy.get('[data-qa="years"').should('be.visible').select('2000')
         cy.get('[data-qa="create-account"]').click()
-        cy.get('[data-qa="first_name"]').then(($input) => { expect($input[0].validationMessage).to.eq('Preencha este campo.') })
+        cy.get('[data-qa="first_name"]').then(($input) => { expect($input[0].validationMessage).to.eq('Please fill out this field.') })
     });
 
     it('Deve exibir erro para campo email não preenchido', () => {
         cy.get('[data-qa="signup-name"]').type('Usuário Teste')
         cy.get('[data-qa="signup-button"]').click()
         cy.get('[data-qa="signup-email"]').then(($input) => { 
-            expect($input[0].validationMessage).to.eq('Preencha este campo.') 
+            expect($input[0].validationMessage).to.eq('Please fill out this field.') 
         })
 
     });

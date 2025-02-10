@@ -23,7 +23,6 @@ jobs:
         with:
           browser: chrome
           headless: true
-          record: true
           config-file: cypress.config.js
 
       - name: Upload test results
